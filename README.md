@@ -2,7 +2,6 @@
 PCB to amplify small differential outputs from pressure transducers and load cells 
 
 <b>Working Directory Structure:</b>
-<p style="text-indent: 40px">   
    doc: Documentation and data sheets
    
    src: source files, e.g. shematic and board files
@@ -16,4 +15,3 @@ PCB to amplify small differential outputs from pressure transducers and load cel
    CAD: 3D CAD models
   
    img: Images of Circuit/Footprints for github display 
-</p>
