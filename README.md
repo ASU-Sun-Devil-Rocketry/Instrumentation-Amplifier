@@ -7,7 +7,7 @@
 <p>
    doc: Documentation and data sheets
    
-   src: source files, e.g. shematic and board files
+   src: source files, e.g. schematic and board files
 
    lib: libraries for schematic symbols and footprints
 
