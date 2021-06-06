@@ -1,6 +1,7 @@
 <h1>Instrumentation Amplifier with Regulated Dual Supply</h1>
 
 <p><u>Current PCB Revision:</u> 1.0 <p>
+<p>PCB Part Number: L-0001</p>
 
 <p>The instrumentation amplifier uses an adjustable gain differential amplifier with buffered inputs to amplify the readings from an analog sensor using a wheatstone bridge such as a load cell or pressure transducer. The operational amplifiers use a dual power supply which is regulated using variable linear voltage regulators.</p>
 
