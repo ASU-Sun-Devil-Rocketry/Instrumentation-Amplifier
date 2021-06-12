@@ -1,16 +1,16 @@
-<h1>Instrumentation Amplifier with Regulated Dual Supply</h1>
+<h1>Rail to Rail Instrumentation Amplifier with Regulated Supply</h1>
 
-<p><u>Current PCB Revision:</u> 1.0 <p>
-<p>PCB Part Number: L-0001</p>
+<p><u>Current PCB Revision:</u> 2.0 <p>
+<p>PCB Part Number: L0001</p>
 
-<p>The instrumentation amplifier uses an adjustable gain differential amplifier with buffered inputs to amplify the readings from an analog sensor using a wheatstone bridge such as a load cell or pressure transducer. The operational amplifiers use a dual power supply which is regulated using variable linear voltage regulators.</p>
+<p>The instrumentation amplifier IC uses an adjustable gain differential amplifier with buffered inputs to amplify the readings from an analog sensor using a wheatstone bridge such as a load cell or pressure transducer. The amplifier supply voltage was chosen to match that of the pressure transducers it is intended to be used with.</p>
 
 <b>Working Directory Structure:</b>
 
 <p>
-   doc: Documentation and data sheets
+   doc: Documentation
    
-   src: source files, e.g. schematic and board files
+   src: source design files, e.g. schematic and board files
 
    lib: libraries for schematic symbols and footprints
 
@@ -23,6 +23,6 @@
    img: Images of Circuit/Footprints for github display 
 </p>
 
-<img src="img/InstrumentationAmp.png">
+<img src="img/schematic.png">
 
-<img src="img/AmpBoard.png">
+<img src="img/layout.png">
