@@ -18,7 +18,7 @@
 
    sim: simulation files 
 
-   CAD: 3D CAD models
+   CAD: 3D models
   
    img: Images of Circuit/Footprints for github display 
 </p>
