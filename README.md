@@ -26,3 +26,7 @@
 <img src="img/schematic.png">
 
 <img src="img/layout.png">
+
+<img src="img/front.png">
+
+<img src="img/bottom.png">
