@@ -34,3 +34,7 @@
 <img src="img/front.png">
 
 <img src="img/bottom.png">
+
+<h2> 3D Model: </h2>
+
+<img src="img/3dview.png">
