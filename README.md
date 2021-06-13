@@ -37,4 +37,4 @@
 
 <h2> 3D Model: </h2>
 
-<img src="img/3dview.png">
+<img src="img/3Dview.png">
