@@ -23,10 +23,14 @@
    img: Images of Circuit/Footprints for github display 
 </p>
 
+<h2>Schematic:</h2>
+
 <img src="img/schematic.png">
 
+<h2>PCB Layout: </h2>
 <img src="img/layout.png">
 
+<h2>Gerber Veiws:</h2>
 <img src="img/front.png">
 
 <img src="img/bottom.png">
