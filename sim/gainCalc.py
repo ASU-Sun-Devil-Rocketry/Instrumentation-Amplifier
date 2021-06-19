@@ -18,12 +18,16 @@ class gainNetwork:
       print("Enter the range of the input signal: \n")
       self.minVin = input("Minimum input voltage (V): ")
       self.maxVin = input("Maximum input voltage (V): ")
+      self.minVin = float(self.minVin)
+      self.maxVin = float(self.maxVin)
       print()
 
       # Ask for target signal range 
       print("Enter the desired signal range: ")
       self.minVout = input("Minimum output voltage (V): ")
       self.maxVout = input("Maximum output voltage (V): ")
+      self.minVout = float(self.minVout)
+      self.maxVout = float(self.maxVout)
       print()
 
       # Ask for amplifier option 
