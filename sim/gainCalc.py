@@ -42,5 +42,12 @@ class gainNetwork:
       self.inError /= 100
       print()
 
+      # Ask for degrees of freedom (number of resistors)
+      self.dof = input("Enter the number of resistors: ")
+      print()
+
+      # Check if dof entry is valid 
+      self.dof = int(self.dof)      
+
    # Calculate Target gain
          
