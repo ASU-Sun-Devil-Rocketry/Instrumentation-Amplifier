@@ -9,13 +9,14 @@
 ##           until dataType is an integer greater 
 ##           than 2 
 def dofCorrect(inputData):
-   inputData = input("Invalid entry. Try again: ")
    try:
       inputData = int(inputData)
       if (inputData < 3):
+         inputData = input("Invalid entry. Try again: ")
          dofCorrect(inputData)
       return inputData
    except ValueError:
+      inputData = input("Invalid entry. Try again: ")
       dofCorrect(inputData)
 
 ## Function: methodCorrect -- ask user to renter the amplification 
@@ -26,13 +27,14 @@ def methodCorrect(inputData):
    minChoice = 1
    
    # Recursive Loop
-   inputData = input("Invalid choice. Try again: ")
    try:
       inputData = int(inputData)
       if(inputData < minChoice or inputData > maxChoice):
+         inputData = input("Invalid choice. Try again: ")
          methodCorrect(inputData)
       return inputData
    except ValueError: 
+      inputData = input("Invalid choice. Try again: ")
       methodCorrect(inputData)
       
 
@@ -40,12 +42,29 @@ def methodCorrect(inputData):
 ##        the optimum parallel resistor configuration for programming the 
 ##        amplifier gain
 ## 
-## Methods: __init__ -- get all input parameters from the user
+## Input Attributes: Input Range  -- range of input voltages, self.minVin to self.maxVin
+##                   Output Range -- range of amplified outputs, self.minVout to 
+##                                   self.maxVout
+##                   Amplification Method -- Type of amplifier chip/circuit used
+##                                           self.ampMethod
+##                   Error Range -- Expected variance in raw output, used to determine 
+##                                  range of useful programmable gains, self.inError
+##                   DOF -- Degrees of freedom, number of resistors used to set the gain
+##                          self.dof
+##      
 class gainNetwork:
 
    # Instantiate gainNetwork class with gain range and amplifier chip
-   def __init__(self, Vinputs = [0,0], Voutputs = [0,0], dof = 4):
+   def __init__(self, Vinputs = [0,0], Voutputs = [0,0], ampMethod = 1, inError = 0.1, dof = 4):
+      self.minVin = Vinputs[0]
+      self.maxVin = Vinputs[1]
+      self.minVout = Voutputs[0]
+      self.maxVout = Voutputs[1]
+      self.ampMethod = ampMethod
+      self.inError = inError
+      self.dof = dof
 
+   # Method: enterInputs -- Get the input parameters from the terminal
    def enterInputs(self):
       # User data queries
       print("Digitally Programmable Amplifier Input Parameters")
@@ -69,8 +88,9 @@ class gainNetwork:
       print()
 
       # Ask for amplifier option 
-      print("Enter the amplification method: \n")
-      print("1. AD623 Instrumnetation Amp IC ")
+      print("Enter the amplification method:")
+      print("   1. AD623 Instrumnetation Amp IC ")
+      print()
       self.ampMethod = input("Enter your choice: ")
  
       # Check if amplfier option is valid
@@ -88,7 +108,43 @@ class gainNetwork:
 
       # Check if dof entry is valid 
       self.dof = dofCorrect(self.dof)   
+      print("________________________________________________________________")
       print()
 
-   # Calculate Target gain
+   # Method: calcTargets -- Calculate Target gain and offsets
+   # Inputs: printTargets -- prints the target gain and offset along with the 
+   #                         input parameters used in the calculation, boolean
+   #                         value, does not print by default
+   def calcTargets(self, printTargets = False):
+      # Offset
+      self.offset = self.minVout - self.minVin
+
+      # Target gain
+      maxVinOffset = self.maxVin + self.offset
+      self.targetGain = self.maxVout/maxVinOffset
+
+      # Print Results
+      if(printTargets):
+         # Inputs
+         print("Input Parameters: \n")
+         print("Input Signal: ", self.minVin, "-", self.maxVin, " V")
+         print("Output Signal: ", self.minVout, "-", self.maxVout, "V")
+         if(self.ampMethod == 1):
+             print("Amplification Method: AD623 Instrumentation Amp IC")
+         else:
+             print("Amplification Method: Choice ", self.ampMethod)
+         print("Input Error: ", self.inError*100, "%")
+         print("Number of Resistors: ", self.dof)
+         print("________________________________________________________________")
+
+         # Targets
+         print("Target Parameters: \n")
+         print("Offset: ", self.offset, " V")
+         print("Target Gain: ", self.targetGain)
+
+         
+
+
+      
+   
          
