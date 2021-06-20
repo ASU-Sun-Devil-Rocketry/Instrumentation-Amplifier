@@ -5,6 +5,9 @@
 ###
 ### Date: 6/17/2021
 
+## Library imports
+import sys
+
 ## Function: dofCorrect -- ask user to renter data 
 ##           until dataType is an integer greater 
 ##           than 2 
@@ -142,9 +145,22 @@ class gainNetwork:
          print("Offset: ", self.offset, " V")
          print("Target Gain: ", self.targetGain)
 
+   # Function: calcResist -- Calculate the resistance corresponding to a given 
+   #                         gain
+   # Inputs: gain -- target gain of the configuration, G
+   #         method -- amplification method being used, method
+   # Outputs: req -- equivalent resistance needed to achieve the target gain
+   def calcResist(G, method):
+      if(method == 1):
+         req = 100000/(G-1)
+      else:
+         print("An invalid amplification code was encountered while calculating the gain resistance. Quitting the program ... ")
+         sys.exit()
+
+
    # Method: calcResist -- Calculate the values of the resistors in the array
-   def calcResist(self):
-               
+   #def calcResist(self):
+                     
 
 
       
