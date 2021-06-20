@@ -44,7 +44,9 @@ def methodCorrect(inputData):
 class gainNetwork:
 
    # Instantiate gainNetwork class with gain range and amplifier chip
-   def __init__(self):
+   def __init__(self, Vinputs = [0,0], Voutputs = [0,0], dof = 4):
+
+   def enterInputs(self):
       # User data queries
       print("Digitally Programmable Amplifier Input Parameters")
       print("________________________________________________________________")
