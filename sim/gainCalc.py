@@ -142,7 +142,9 @@ class gainNetwork:
          print("Offset: ", self.offset, " V")
          print("Target Gain: ", self.targetGain)
 
-         
+   # Method: calcResist -- Calculate the values of the resistors in the array
+   def calcResist(self):
+               
 
 
       
