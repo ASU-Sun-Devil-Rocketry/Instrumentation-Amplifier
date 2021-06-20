@@ -5,6 +5,42 @@
 ###
 ### Date: 6/17/2021
 
+## Function: dofCorrect -- ask user to renter data 
+##           until dataType is an integer greater 
+##           than 2 
+def dofCorrect(inputData):
+   inputData = input("Invalid entry. Try again: ")
+   try:
+      inputData = int(inputData)
+      if (inputData < 3):
+         dofCorrect(inputData)
+      return inputData
+   except ValueError:
+      dofCorrect(inputData)
+
+## Function: methodCorrect -- ask user to renter the amplification 
+##           method until entry is a valid choice
+def methodCorrect(inputData):
+   # Choices: 1, 2, 3, 4, 5
+   maxChoice = 5
+   minChoice = 1
+   
+   # Recursive Loop
+   inputData = input("Invalid choice. Try again: ")
+   try:
+      inputData = int(inputData)
+      if(inputData < minChoice or inputData > maxChoice):
+         methodCorrect(inputData)
+      return inputData
+   except ValueError: 
+      methodCorrect(inputData)
+      
+
+## Class: gainNetwork -- class to contain all data and functions for calculating
+##        the optimum parallel resistor configuration for programming the 
+##        amplifier gain
+## 
+## Methods: __init__ -- get all input parameters from the user
 class gainNetwork:
 
    # Instantiate gainNetwork class with gain range and amplifier chip
@@ -34,6 +70,9 @@ class gainNetwork:
       print("Enter the amplification method: \n")
       print("1. AD623 Instrumnetation Amp IC ")
       self.ampMethod = input("Enter your choice: ")
+ 
+      # Check if amplfier option is valid
+      self.ampMethod = methodCorrect(self.ampMethod)
       print()
 
       # Ask for input error
@@ -44,10 +83,10 @@ class gainNetwork:
 
       # Ask for degrees of freedom (number of resistors)
       self.dof = input("Enter the number of resistors: ")
-      print()
 
       # Check if dof entry is valid 
-      self.dof = int(self.dof)      
+      self.dof = dofCorrect(self.dof)   
+      print()
 
    # Calculate Target gain
          
