@@ -7,6 +7,7 @@
 
 ## Library imports
 import sys
+import numpy as np
 
 ## Function: dofCorrect -- ask user to renter data 
 ##           until dataType is an integer greater 
@@ -153,14 +154,35 @@ class gainNetwork:
    def calcResist(G, method):
       if(method == 1):
          req = 100000/(G-1)
+         return req
       else:
          print("An invalid amplification code was encountered while calculating the gain resistance. Quitting the program ... ")
          sys.exit()
 
+   # Function: calcGain -- Calculate the gain for a given gain-setting  
+   #                       resistance 
+   # Inputs: Rg -- gain-setting resistance in Ohms
+   #         method -- amplification method
+   # Outputs: G -- gain corresponding to gain-setting resistance
+   def calcGain(Rg, method):
+      if(method == 1):
+         G = 1 + 100000/Rg
+         return G
+      else: 
+         print("An invalid amplification code was encountered while calculating the amplifier gain. Quitting the program ... ")
+         sys.exit()
 
    # Method: calcResist -- Calculate the values of the resistors in the array
-   #def calcResist(self):
-                     
+   def calcResist(self):
+   # Instantiate array with resistor values 
+   self.resistors = np.zeros(self.dof)
+
+   # Instantiate list with resistor configurations
+   # 1st column -- Configuration number
+   # 2nd column -- Equivalent resistance
+   # 3rd column -- Gain
+   self.configs = np.zeros((2^(self.dof), 3))
+                    
 
 
       
