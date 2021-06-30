@@ -8,19 +8,19 @@
 <b>Working Directory Structure:</b>
 
 <p>
-   doc: Documentation
+   doc: documentation
    
    src: source design files, e.g. schematic and board files
 
    lib: libraries for schematic symbols and footprints
 
-   production: files needed for PCB fabrication, e.g. gerbers, profile, drill file
+   production: files needed for pcb fabrication, e.g. gerbers, profile, drill file
 
    sim: simulation files 
 
-   CAD: 3D models
+   cad: 3d models
   
-   img: Images of Circuit/Footprints for github display 
+   img: images of circuit/footprints for github display 
 </p>
 
 <h2>Schematic:</h2>
