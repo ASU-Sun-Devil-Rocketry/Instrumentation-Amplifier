@@ -2,6 +2,7 @@
 
 <p><u>Current PCB Revision:</u> 2.0 <p>
 <p>PCB Part Number: L0001</p>
+<p>Design Folder: <a href="https://drive.google.com/drive/folders/1LhDJDFwJdzdXdzs4db-Y9qnFIhuEQvka">Click Here</a></p>
 
 <p>The instrumentation amplifier IC uses an adjustable gain differential amplifier with buffered inputs to amplify the readings from an analog sensor using a wheatstone bridge such as a load cell or pressure transducer. The amplifier supply voltage was chosen to match that of the pressure transducers it is intended to be used with.</p>
 
