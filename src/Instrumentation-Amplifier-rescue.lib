@@ -1,19 +1,33 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Earth-power-Instrumentation-Amplifier-rescue
+# PPTC041LFBN-RC-Instrumentation-Amplifier_L-0001
 #
-DEF Earth-power-Instrumentation-Amplifier-rescue #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "Earth-power-Instrumentation-Amplifier-rescue" 0 -150 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF PPTC041LFBN-RC-Instrumentation-Amplifier_L-0001 J 0 40 Y Y 1 L N
+F0 "J" -300 250 50 H V L BNN
+F1 "PPTC041LFBN-RC-Instrumentation-Amplifier_L-0001" -300 -400 50 H V L BNN
+F2 "" 500 -550 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
 DRAW
-P 2 0 1 0 -25 -75 25 -75 N
-P 2 0 1 0 -5 -100 5 -100 N
-P 2 0 1 0 0 -50 0 0 N
-P 2 0 1 0 50 -50 -50 -50 N
-X Earth 1 0 0 0 D 50 50 1 1 W N
+A -75 -200 25 -901 900 0 0 10 N -75 -175 -75 -225
+A -75 -100 25 -901 900 0 0 10 N -75 -75 -75 -125
+A -75 0 25 -901 900 0 0 10 N -75 25 -75 -25
+A -75 100 25 -901 900 0 0 10 N -75 125 -75 75
+P 2 0 0 10 -300 -300 -300 200 N
+P 2 0 0 10 -300 200 -50 200 N
+P 2 0 0 10 -50 -300 -300 -300 N
+P 2 0 0 10 0 -250 -50 -300 N
+P 2 0 0 10 0 -200 -50 -200 N
+P 2 0 0 10 0 -100 -50 -100 N
+P 2 0 0 10 0 0 -50 0 N
+P 2 0 0 10 0 100 -50 100 N
+P 2 0 0 10 0 100 0 -250 N
+P 2 0 0 10 0 150 -50 200 N
+P 2 0 0 10 0 150 0 100 N
+X 1 1 200 100 200 L 40 40 0 0 P
+X 2 2 200 0 200 L 40 40 0 0 P
+X 3 3 200 -100 200 L 40 40 0 0 P
+X 4 4 200 -200 200 L 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #

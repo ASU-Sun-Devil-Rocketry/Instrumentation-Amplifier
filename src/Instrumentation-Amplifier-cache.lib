@@ -1,22 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Instrumentation-Amplifier-rescue_Earth-power-Instrumentation-Amplifier-rescue
-#
-DEF Instrumentation-Amplifier-rescue_Earth-power-Instrumentation-Amplifier-rescue #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "Instrumentation-Amplifier-rescue_Earth-power-Instrumentation-Amplifier-rescue" 0 -150 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -25 -75 25 -75 N
-P 2 0 1 0 -5 -100 5 -100 N
-P 2 0 1 0 0 -50 0 0 N
-P 2 0 1 0 50 -50 -50 -50 N
-X Earth 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
 # Instrumentation-Amplifier_L-0001_+12V
 #
 DEF Instrumentation-Amplifier_L-0001_+12V None 0 40 Y Y 1 F P
@@ -28,6 +12,42 @@ DRAW
 P 2 0 1 0 -100 50 100 50 N
 P 4 0 1 0 0 -50 0 50 -50 50 50 50 N
 X ~ ~ 0 -150 200 U 40 40 0 0 W
+ENDDRAW
+ENDDEF
+#
+# Instrumentation-Amplifier_L-0001_2043-1X04G00DAU
+#
+DEF Instrumentation-Amplifier_L-0001_2043-1X04G00DAU P 0 10 Y N 1 F N
+F0 "P" 250 200 60 H V C CNN
+F1 "Instrumentation-Amplifier_L-0001_2043-1X04G00DAU" 350 -450 60 H V C CNN
+F2 "CONN_2043-1X04G00DAU_OUP" 350 -550 60 H I C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ CONN_2043-1X04G00DAU_OUP
+ CONN_2043-1X04G00DAU_OUP-M
+ CONN_2043-1X04G00DAU_OUP-L
+$ENDFPLIST
+DRAW
+P 2 1 1 5 200 -400 500 -400 N
+P 2 1 1 5 200 100 200 -400 N
+P 2 1 1 5 400 -300 200 -300 N
+P 2 1 1 5 400 -300 350 -333 N
+P 2 1 1 5 400 -300 350 -267 N
+P 2 1 1 5 400 -200 200 -200 N
+P 2 1 1 5 400 -200 350 -233 N
+P 2 1 1 5 400 -200 350 -167 N
+P 2 1 1 5 400 -100 200 -100 N
+P 2 1 1 5 400 -100 350 -133 N
+P 2 1 1 5 400 -100 350 -67 N
+P 2 1 1 5 400 0 200 0 N
+P 2 1 1 5 400 0 350 -33 N
+P 2 1 1 5 400 0 350 33 N
+P 2 1 1 5 500 -400 500 100 N
+P 2 1 1 5 500 100 200 100 N
+X 1 1 0 0 200 R 59 59 1 1 P
+X 2 2 0 -100 200 R 59 59 1 1 P
+X 3 3 0 -200 200 R 59 59 1 1 P
+X 4 4 0 -300 200 R 59 59 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -71,6 +91,22 @@ S -50 -75 -25 75 0 0 0 F
 S 25 -75 50 75 0 0 0 F
 X ~ 1 150 0 100 L 40 40 0 0 P
 X ~ 2 -150 0 100 R 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+# Instrumentation-Amplifier_L-0001_Earth
+#
+DEF Instrumentation-Amplifier_L-0001_Earth #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "Instrumentation-Amplifier_L-0001_Earth" 0 -150 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X Earth 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
@@ -126,36 +162,6 @@ P 2 1 1 8 200 -75 200 -50 N
 P 2 1 1 8 200 -50 175 -75 N
 X 1 1 0 -150 100 U 59 59 1 1 w
 X 2 2 0 250 100 D 59 59 1 1 W
-ENDDRAW
-ENDDEF
-#
-# Instrumentation-Amplifier_L-0001_PPTC041LFBN-RC
-#
-DEF Instrumentation-Amplifier_L-0001_PPTC041LFBN-RC J 0 40 Y Y 1 L N
-F0 "J" -300 250 50 H V L BNN
-F1 "Instrumentation-Amplifier_L-0001_PPTC041LFBN-RC" -300 -400 50 H V L BNN
-F2 "" 500 -550 50 H I L BNN
-F3 "" 0 0 50 H I L BNN
-DRAW
-A -75 -200 25 -901 900 0 0 10 N -75 -175 -75 -225
-A -75 -100 25 -901 900 0 0 10 N -75 -75 -75 -125
-A -75 0 25 -901 900 0 0 10 N -75 25 -75 -25
-A -75 100 25 -901 900 0 0 10 N -75 125 -75 75
-P 2 0 0 10 -300 -300 -300 200 N
-P 2 0 0 10 -300 200 -50 200 N
-P 2 0 0 10 -50 -300 -300 -300 N
-P 2 0 0 10 0 -250 -50 -300 N
-P 2 0 0 10 0 -200 -50 -200 N
-P 2 0 0 10 0 -100 -50 -100 N
-P 2 0 0 10 0 0 -50 0 N
-P 2 0 0 10 0 100 -50 100 N
-P 2 0 0 10 0 100 0 -250 N
-P 2 0 0 10 0 150 -50 200 N
-P 2 0 0 10 0 150 0 100 N
-X 1 1 200 100 200 L 40 40 0 0 P
-X 2 2 200 0 200 L 40 40 0 0 P
-X 3 3 200 -100 200 L 40 40 0 0 P
-X 4 4 200 -200 200 L 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #

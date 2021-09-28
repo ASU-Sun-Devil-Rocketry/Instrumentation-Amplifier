@@ -36,21 +36,6 @@ F 3 "" H 7550 3300 50  0001 L BNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Instrumentation-Amplifier_L-0001:PPTC041LFBN-RC J2
-U 1 1 60C4896D
-P 6400 5200
-F 0 "J2" V 6357 5430 50  0000 L CNN
-F 1 "PPTC041LFBN-RC" H 6070 5105 50  0001 R CNN
-F 2 "Instrumentation-Amplifier:PPTC041LFBN-RC" H 6900 4650 50  0001 L BNN
-F 3 "" H 6400 5200 50  0001 L BNN
-F 4 "" H 7250 4850 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 5 "" H 6400 5200 50  0001 L BNN "STANDARD"
-F 6 "" H 6400 5200 50  0001 L BNN "PARTREV"
-F 7 "" H 7250 4800 50  0001 L BNN "MANUFACTURER"
-	1    6400 5200
-	0    1    -1   0   
-$EndComp
-$Comp
 L Instrumentation-Amplifier_L-0001:CAP_0603 C2
 U 1 1 60C4EBDD
 P 5150 3450
@@ -73,7 +58,7 @@ F 3 "" H 8650 4500 50  0001 L BNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Instrumentation-Amplifier-rescue:Earth-power-Instrumentation-Amplifier-rescue #PWR02
+L Instrumentation-Amplifier_L-0001:Earth #PWR02
 U 1 1 60C7A04E
 P 4400 3900
 F 0 "#PWR02" H 4400 3650 50  0001 C CNN
@@ -81,17 +66,6 @@ F 1 "Earth" H 4400 3750 50  0001 C CNN
 F 2 "" H 4400 3900 50  0001 C CNN
 F 3 "~" H 4400 3900 50  0001 C CNN
 	1    4400 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Instrumentation-Amplifier_L-0001:PPTC041LFBN-RC J1
-U 1 1 60C867DB
-P 2650 4100
-F 0 "J1" H 2607 4375 50  0000 C CNN
-F 1 "PPTC041LFBN-RC" H 2607 4376 50  0001 C CNN
-F 2 "Instrumentation-Amplifier:PPTC041LFBN-RC" H 3150 3550 50  0001 L BNN
-F 3 "" H 2650 4100 50  0001 L BNN
-	1    2650 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -113,7 +87,7 @@ Connection ~ 4400 3750
 Wire Wire Line
 	4400 3750 4400 3650
 $Comp
-L Instrumentation-Amplifier-rescue:Earth-power-Instrumentation-Amplifier-rescue #PWR01
+L Instrumentation-Amplifier_L-0001:Earth #PWR01
 U 1 1 60CA2CA3
 P 3000 4500
 F 0 "#PWR01" H 3000 4250 50  0001 C CNN
@@ -199,7 +173,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 4100 6800 4100
 $Comp
-L Instrumentation-Amplifier-rescue:Earth-power-Instrumentation-Amplifier-rescue #PWR04
+L Instrumentation-Amplifier_L-0001:Earth #PWR04
 U 1 1 60CD5E86
 P 6800 5000
 F 0 "#PWR04" H 6800 4750 50  0001 C CNN
@@ -240,7 +214,7 @@ Wire Wire Line
 	6800 4300 6800 4900
 Connection ~ 6800 4900
 $Comp
-L Instrumentation-Amplifier-rescue:Earth-power-Instrumentation-Amplifier-rescue #PWR05
+L Instrumentation-Amplifier_L-0001:Earth #PWR05
 U 1 1 60CED2BF
 P 8400 4500
 F 0 "#PWR05" H 8400 4250 50  0001 C CNN
@@ -255,7 +229,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 4200 8650 4200
 $Comp
-L Instrumentation-Amplifier-rescue:Earth-power-Instrumentation-Amplifier-rescue #PWR06
+L Instrumentation-Amplifier_L-0001:Earth #PWR06
 U 1 1 60CF0331
 P 8650 4900
 F 0 "#PWR06" H 8650 4650 50  0001 C CNN
@@ -275,7 +249,7 @@ Wire Wire Line
 	5750 3250 5750 3150
 Connection ~ 5750 3150
 $Comp
-L Instrumentation-Amplifier-rescue:Earth-power-Instrumentation-Amplifier-rescue #PWR03
+L Instrumentation-Amplifier_L-0001:Earth #PWR03
 U 1 1 60D1305C
 P 5750 3800
 F 0 "#PWR03" H 5750 3550 50  0001 C CNN
@@ -339,4 +313,26 @@ Text Label 6000 5000 0    50   ~ 0
 +12V
 Wire Wire Line
 	3000 4300 3000 4500
+$Comp
+L Instrumentation-Amplifier_L-0001:2043-1X04G00DAU P?
+U 1 1 6153D20A
+P 2850 4000
+F 0 "P?" H 3092 4181 60  0000 C CNN
+F 1 "2043-1X04G00DAU" H 3092 4181 60  0001 C CNN
+F 2 "CONN_2043-1X04G00DAU_OUP" H 3200 3450 60  0001 C CNN
+F 3 "" H 2850 4000 60  0000 C CNN
+	1    2850 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Instrumentation-Amplifier_L-0001:2043-1X04G00DAU P?
+U 1 1 61541FED
+P 6500 5000
+F 0 "P?" V 6689 5128 60  0000 L CNN
+F 1 "2043-1X04G00DAU" V 6795 5128 60  0000 L CNN
+F 2 "CONN_2043-1X04G00DAU_OUP" H 6850 4450 60  0001 C CNN
+F 3 "" H 6500 5000 60  0000 C CNN
+	1    6500 5000
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
