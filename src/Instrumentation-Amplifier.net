@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/olsport/Documents/SDR/PCB/Instrumentation-Amplifier/src/Instrumentation-Amplifier.sch)
-    (date "Tue Sep 28 12:03:20 2021")
+    (date "Tue Sep 28 12:18:19 2021")
     (tool "Eeschema 5.1.10")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -72,7 +72,19 @@
       (footprint Instrumentation-Amplifier:AD623ARZ-R7)
       (libsource (lib Instrumentation-Amplifier_L-0001) (part AD623ARZ-R7) (description ""))
       (sheetpath (names /) (tstamps /))
-      (tstamp 60CB2EEA)))
+      (tstamp 60CB2EEA))
+    (comp (ref H1)
+      (value Mounting-Hole)
+      (footprint Instrumentation-Amplifier:MountingHole_2.1mm)
+      (libsource (lib Instrumentation-Amplifier_L-0001) (part Mounting-Hole) (description ""))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 615380CC))
+    (comp (ref H2)
+      (value Mounting-Hole)
+      (footprint Instrumentation-Amplifier:MountingHole_2.1mm)
+      (libsource (lib Instrumentation-Amplifier_L-0001) (part Mounting-Hole) (description ""))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 6153919E)))
   (libparts
     (libpart (lib Instrumentation-Amplifier_L-0001) (part 2043-1X04G00DAU)
       (footprints
@@ -136,6 +148,10 @@
       (pins
         (pin (num 1) (name 1) (type power_out))
         (pin (num 2) (name 2) (type power_in))))
+    (libpart (lib Instrumentation-Amplifier_L-0001) (part Mounting-Hole)
+      (fields
+        (field (name Reference) H)
+        (field (name Value) Mounting-Hole)))
     (libpart (lib Instrumentation-Amplifier_L-0001) (part RES_0603)
       (fields
         (field (name Reference) R)

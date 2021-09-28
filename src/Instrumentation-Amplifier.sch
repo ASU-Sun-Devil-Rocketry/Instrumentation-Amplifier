@@ -302,4 +302,47 @@ Text Notes 1400 5000 0    118  ~ 0
 Power Supply
 Text Notes 5650 5000 0    118  ~ 0
 Amplifier
+$Comp
+L Instrumentation-Amplifier_L-0001:Mounting-Hole H1
+U 1 1 615380CC
+P 1750 6000
+F 0 "H1" H 1958 6046 50  0000 L CNN
+F 1 "Mounting-Hole" H 1958 5955 50  0000 L CNN
+F 2 "Instrumentation-Amplifier:MountingHole_2.1mm" H 1750 6000 50  0001 C CNN
+F 3 "" H 1750 6000 50  0001 C CNN
+	1    1750 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Instrumentation-Amplifier_L-0001:Mounting-Hole H2
+U 1 1 6153919E
+P 1750 6550
+F 0 "H2" H 1958 6596 50  0000 L CNN
+F 1 "Mounting-Hole" H 1958 6505 50  0000 L CNN
+F 2 "Instrumentation-Amplifier:MountingHole_2.1mm" H 1750 6550 50  0001 C CNN
+F 3 "" H 1750 6550 50  0001 C CNN
+	1    1750 6550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4150 5750 4150 7200
+Wire Notes Line
+	4150 7200 1350 7200
+Wire Notes Line
+	1350 7200 1350 5750
+Wire Notes Line
+	1350 5750 4150 5750
+Text Notes 1400 7100 0    118  ~ 0
+Misc.
+$Comp
+L Instrumentation-Amplifier_L-0001:Logo LOGO1
+U 1 1 615443B8
+P 3050 6050
+F 0 "LOGO1" H 3228 6096 50  0001 L CNN
+F 1 "Logo" H 3228 6050 50  0000 L CNN
+F 2 "Instrumentation-Amplifier:logo2" H 3050 6050 50  0001 C CNN
+F 3 "" H 3050 6050 50  0001 C CNN
+	1    3050 6050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
