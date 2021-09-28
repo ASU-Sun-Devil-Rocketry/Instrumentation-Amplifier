@@ -1,20 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Instrumentation-Amplifier_L-0001_+12V
-#
-DEF Instrumentation-Amplifier_L-0001_+12V None 0 40 Y Y 1 F P
-F0 "None" 0 100 50 H V C CNN
-F1 "Instrumentation-Amplifier_L-0001_+12V" 150 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -100 50 100 50 N
-P 4 0 1 0 0 -50 0 50 -50 50 50 50 N
-X ~ ~ 0 -150 200 U 40 40 0 0 W
-ENDDRAW
-ENDDEF
-#
 # Instrumentation-Amplifier_L-0001_2043-1X04G00DAU
 #
 DEF Instrumentation-Amplifier_L-0001_2043-1X04G00DAU P 0 10 Y N 1 F N
@@ -184,20 +170,6 @@ P 2 0 0 8 65 40 90 -40 N
 P 2 0 0 8 90 -40 100 0 N
 X ~ 1 -300 0 200 R 40 40 0 0 P
 X ~ 2 300 0 200 L 40 40 0 0 P
-ENDDRAW
-ENDDEF
-#
-# Instrumentation-Amplifier_L-0001_Vo
-#
-DEF Instrumentation-Amplifier_L-0001_Vo None 0 40 Y Y 1 F P
-F0 "None" 0 100 50 H V C CNN
-F1 "Instrumentation-Amplifier_L-0001_Vo" 150 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -100 50 100 50 N
-P 4 0 1 0 0 -50 0 50 -50 50 50 50 N
-X ~ ~ 0 -150 200 U 40 40 0 0 B
 ENDDRAW
 ENDDEF
 #
