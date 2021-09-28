@@ -1,6 +1,22 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Instrumentation-Amplifier-rescue_Earth-power-Instrumentation-Amplifier-rescue
+#
+DEF Instrumentation-Amplifier-rescue_Earth-power-Instrumentation-Amplifier-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "Instrumentation-Amplifier-rescue_Earth-power-Instrumentation-Amplifier-rescue" 0 -150 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X Earth 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
 # Instrumentation-Amplifier_L-0001_+12V
 #
 DEF Instrumentation-Amplifier_L-0001_+12V None 0 40 Y Y 1 F P
@@ -176,22 +192,6 @@ DRAW
 P 2 0 1 0 -100 50 100 50 N
 P 4 0 1 0 0 -50 0 50 -50 50 50 50 N
 X ~ ~ 0 -150 200 U 40 40 0 0 B
-ENDDRAW
-ENDDEF
-#
-# power_Earth
-#
-DEF power_Earth #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_Earth" 0 -150 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -25 -75 25 -75 N
-P 2 0 1 0 -5 -100 5 -100 N
-P 2 0 1 0 0 -50 0 0 N
-P 2 0 1 0 50 -50 -50 -50 N
-X Earth 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

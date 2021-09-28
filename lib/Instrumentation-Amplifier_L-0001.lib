@@ -58,6 +58,22 @@ X ~ 2 -150 0 100 R 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
+# Earth-power
+#
+DEF Earth-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "Earth-power" 0 -150 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X Earth 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
 # LM7812_SMD
 #
 DEF LM7812_SMD U 0 40 Y Y 1 L N

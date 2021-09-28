@@ -73,7 +73,7 @@ F 3 "" H 8650 4500 50  0001 L BNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:Earth #PWR02
+L Instrumentation-Amplifier-rescue:Earth-power-Instrumentation-Amplifier-rescue #PWR02
 U 1 1 60C7A04E
 P 4400 3900
 F 0 "#PWR02" H 4400 3650 50  0001 C CNN
@@ -113,7 +113,7 @@ Connection ~ 4400 3750
 Wire Wire Line
 	4400 3750 4400 3650
 $Comp
-L power:Earth #PWR01
+L Instrumentation-Amplifier-rescue:Earth-power-Instrumentation-Amplifier-rescue #PWR01
 U 1 1 60CA2CA3
 P 3000 4500
 F 0 "#PWR01" H 3000 4250 50  0001 C CNN
@@ -199,7 +199,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 4100 6800 4100
 $Comp
-L power:Earth #PWR04
+L Instrumentation-Amplifier-rescue:Earth-power-Instrumentation-Amplifier-rescue #PWR04
 U 1 1 60CD5E86
 P 6800 5000
 F 0 "#PWR04" H 6800 4750 50  0001 C CNN
@@ -240,7 +240,7 @@ Wire Wire Line
 	6800 4300 6800 4900
 Connection ~ 6800 4900
 $Comp
-L power:Earth #PWR05
+L Instrumentation-Amplifier-rescue:Earth-power-Instrumentation-Amplifier-rescue #PWR05
 U 1 1 60CED2BF
 P 8400 4500
 F 0 "#PWR05" H 8400 4250 50  0001 C CNN
@@ -255,7 +255,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 4200 8650 4200
 $Comp
-L power:Earth #PWR06
+L Instrumentation-Amplifier-rescue:Earth-power-Instrumentation-Amplifier-rescue #PWR06
 U 1 1 60CF0331
 P 8650 4900
 F 0 "#PWR06" H 8650 4650 50  0001 C CNN
@@ -275,7 +275,7 @@ Wire Wire Line
 	5750 3250 5750 3150
 Connection ~ 5750 3150
 $Comp
-L power:Earth #PWR03
+L Instrumentation-Amplifier-rescue:Earth-power-Instrumentation-Amplifier-rescue #PWR03
 U 1 1 60D1305C
 P 5750 3800
 F 0 "#PWR03" H 5750 3550 50  0001 C CNN
