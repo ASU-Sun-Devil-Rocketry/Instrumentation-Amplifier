@@ -65,17 +65,15 @@ F 3 "" V 4450 4500 60  0000 C CNN
 	1    4450 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4450 4400 4450 4500
 $Comp
 L Instrumentation-Amplifier_L-0001:Earth #PWR03
 U 1 1 60D1305C
-P 4450 4500
-F 0 "#PWR03" H 4450 4250 50  0001 C CNN
-F 1 "Earth" H 4450 4350 50  0001 C CNN
-F 2 "" H 4450 4500 50  0001 C CNN
-F 3 "~" H 4450 4500 50  0001 C CNN
-	1    4450 4500
+P 4450 4700
+F 0 "#PWR03" H 4450 4450 50  0001 C CNN
+F 1 "Earth" H 4450 4550 50  0001 C CNN
+F 2 "" H 4450 4700 50  0001 C CNN
+F 3 "~" H 4450 4700 50  0001 C CNN
+	1    4450 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -244,17 +242,11 @@ Wire Wire Line
 Wire Wire Line
 	7200 4100 7200 3700
 Wire Wire Line
-	7200 3700 7750 3700
-Wire Wire Line
-	8350 3700 8850 3700
-Wire Wire Line
 	8850 3700 8850 4100
 Wire Wire Line
 	9100 4200 8850 4200
 Wire Wire Line
 	8850 4300 9050 4300
-Wire Wire Line
-	9050 4350 9050 4300
 Connection ~ 9050 4300
 Wire Wire Line
 	9050 4300 9100 4300
@@ -345,4 +337,23 @@ F 3 "" H 3050 6050 50  0001 C CNN
 	1    3050 6050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Instrumentation-Amplifier_L-0001:RES_0603 R3
+U 1 1 615A3FED
+P 4450 4550
+F 0 "R3" V 4404 4619 50  0000 L CNN
+F 1 "2k" V 4495 4619 50  0000 L CNN
+F 2 "" H 4500 4050 50  0001 L BNN
+F 3 "" H 4450 4550 50  0001 L BNN
+	1    4450 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 3700 8850 3700
+Wire Wire Line
+	7200 3700 7900 3700
+Wire Wire Line
+	9050 4300 9050 4500
+Wire Wire Line
+	9050 4950 9050 4800
 $EndSCHEMATC
