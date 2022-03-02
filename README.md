@@ -38,4 +38,4 @@
 
 <h2> 3D Model: </h2>
 
-<img src="img/3Dview.png">
+<img src="img/Instrumentation-Amplifier.-FRONT.png">
